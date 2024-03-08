@@ -1,0 +1,130 @@
+/*
+Theme Name: sydney-child
+Template: sydney
+Theme URI: https://athemes.com/theme/sydney
+Author: aThemes
+Author URI: https://athemes.com
+Description: Sydney is a powerful business theme that provides a fast way for companies or freelancers to create an awesome online presence. As well as being fully compatible with Elementor, Sydney brings plenty of customization possibilities like access to all Google Fonts, full color control, layout control, logo upload, full screen slider, header image, sticky navigation and much more. Also, Sydney provides all the construction blocks you need to rapidly create an engaging front page.
+Version: 1.52
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sydney
+Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-header, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Sydney is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+*/
+
+/* Couleur h1 " Accueil " */
+h1.title-post.entry-title {
+    color: black;
+}
+
+/* Couleur du bouton sur le Slider */ 
+a.roll-button.button-slider {
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+/* Couleur en passant la souris sur le bouton du Slider */
+a.roll-button.button-slider:hover {
+    background-color: #8a4e31;
+}
+
+/* Centrer les titres h1 */
+h1.title-post.entry-title {
+	text-align: center;
+}
+
+/* Conteneur des éléments de la page */
+.entry-content, .content-area { 
+	background-color: white;
+	text-align: center;
+}
+
+/* Centrer conteneur Accueil*/
+div#primary {
+	width: 100%;
+	float:left; 
+}
+
+/* Barre de navigation en noir avec une ombre blanche */
+header#masthead {
+    background-color: black;
+	box-shadow: 0px 0px 5px 0px #656565;
+}
+
+/* Image du site en bordure arrondi */ 
+img {  
+    border-radius: 3px;
+	margin-left: 2px;
+	margin-top: 2px;
+}
+
+/* Zone de texte "Message" de la partie Contact */
+textarea { 
+	resize: none;
+	padding : 20px;
+}
+
+
+
+/* Actualités */
+
+.classic-alt .entry-title a, p {
+    color: black;
+}
+
+/* Footer noir */ 
+footer#colophon {
+    background-color: black;
+}
+
+/* Barre de couleur sur le footer */
+div#sidebar-footer {
+    border-top: 2px solid #A8603C;
+}
+
+/* Animation en CSS sur les boutons de l'accueil et activités du mois */
+a.maxbutton:hover {
+	    -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+
+/* Tableau de Activités du mois en responsive */
+@media screen and (max-width: 768px) {
+	tr {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.tablepress td {
+		text-align: center;
+	}
+	
+	.tablepress img {
+		display:none;
+	}
+
+	.slides-container {
+		width: 100px;
+	}
+
+	input {
+		width: 100%;
+		max-width: 500px;
+		box-sizing: border-box;
+	}
+
+	a.maxbutton {
+		margin-bottom: 6px;
+		margin-left: 20px;
+	}
+
+	span.maxbutton-1-container.mb-container {
+		text-align: center;
+	}
